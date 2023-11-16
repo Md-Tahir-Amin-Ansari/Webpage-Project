@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+    
+}
+
+html {
+    background: url('https://wallpaper.dog/large/973643.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    /* font-family: Arial, sans-serif; Set a fallback font */
+    background: none; /* Remove any background from the body */
+}
+#titlebar{
+    
+    background-color:  #051022;
+    width: 100%;
+    height: 60px;
+    padding: 18px;
+    display: flex; /* Make it a flex container */
+    justify-content: space-between; /* Align items to the space between */
+    align-items: center;
+   
+}
+#titlebar_buttons .buttons{/* to target inside the div use space*/
+    color: #CCCCCC;
+    background-color: transparent;
+    /* font-family: "papyrus"; */
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    margin: 4px;
+}
+#titlebar_home .buttons{
+    color: #CCCCCC;
+    background-color: transparent;
+    /* font-family: "papyrus"; */
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    margin: 4px;
+}
+#image_home{
+    position: relative;
+    width: 100%;
+    height: 557px;
+    object-fit: cover;
+
+}
+img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#home{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 80%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size:xx-large;
+    font-weight:bolder;
+}
+#home .intro{
+    padding: 10px;
+    padding-left: 60px;
+}
+#home img{
+    /* object-fit:scale-down; */
+    height: 300px;
+    width: 300px;
+    right: 90px;
+    bottom: 40px;
+    
+}
+.subsec{
+    position: relative;
+    width: 100%;
+    height: 557px;
+    object-fit: cover;
+    color: rgba(255, 255, 255);
+    font-size:xx-large;
+    padding: 10%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+
+}
+.subsec .about{
+    padding: 10px;
+}
+.subsec:hover{
+    opacity: 1;
+
+}
+
+/* #about .about:hover{
+    transform: rotate(100%);
+} */
+.project{
+    position: relative;
+}
+#project #image_home #home #img1{
+    height: 300px;
+    width: 430px;
+    left: 40px;
+    top: 45px;
+}
+#project #image_home #home #img2{
+    height: 300px;
+    width: 430px;
+    right: 40px;
+    top: 45px;
+}
+#project #image_home #home h5{
+    position: absolute;
+    text-align: center;
+    left:35%;
+}
+#project_description{
+    
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left:20%;
+}
+#skills{
+    position: relative;
+}
+#problem_solving{
+    font-size: x-large;
+    position: absolute;
+    height: 225px;
+    width: 180px;
+    top: 20%;
+    right: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+#team_work{
+    font-size: x-large;
+    position: absolute;
+    height: 225px;
+    width: 180px;
+    top: 20%;
+    right: 30%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-top: 5%;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+#programming_proficiency{
+    font-size: x-large;
+    position: absolute;
+    height: 225px;
+    width: 180px;
+    top: 20%;
+    right: 10%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+#programming_proficiency:hover {
+    transform: scale(1.1); /* Enlarge the element on hover */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Add a box shadow on hover for a raised effect */
+}
+#team_work:hover {
+    transform: scale(1.1); /* Enlarge the element on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1); /* Add a box shadow on hover for a raised effect */
+}
+#problem_solving:hover {
+    transform: scale(1.1); /* Enlarge the element on hover */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Add a box shadow on hover for a raised effect */
+}
+#contacts{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 457px;
+}
+#contacts #contacts{
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 10%;
+}
